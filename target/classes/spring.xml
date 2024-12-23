@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dev1" class="com.vinay.Dev">
+    
+
+    <!-- //Creating a injection for non-primitive variable
+    <property name="lap" ref="lap1"></property> -->
+    <!-- //Created a constructor injection for non-primitive type
+    <constructor-arg ref="lap1" /> -->
+   
+   <!-- //Usage of constrcutor or setter injection based on the prefermenece if we want to create the 
+   //them while creating object itself go with the constructor or else setter  -->
+
+
+    <!-- setter injection
+    <property name="val" value="12"></property> -->
+    <!-- constructor injection
+    <constructor-arg value="15"  /> -->
+
+     </bean>
+
+    <!-- <bean id="dev2" class="com.vinay.Dev">
+    </bean>  -->
+
+    <bean id="lap1" class="com.vinay.Laptop">
+    </bean>
+</beans>
