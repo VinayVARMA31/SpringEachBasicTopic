@@ -21,5 +21,5 @@ public final class App {
         Dev d1 = (Dev) con.getBean("dev1");
         // System.out.println(d1.getVal());
         d1.build();
-    }
+     }
 }

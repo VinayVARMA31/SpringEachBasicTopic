@@ -3,8 +3,8 @@
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="dev1" class="com.vinay.Dev" autowire="byName">
-    
+    <!-- <bean id="dev1" class="com.vinay.Dev" autowire="byName"> -->
+        <bean id="dev1" class="com.vinay.Dev" autowire="byType">
 
     <!-- //Creating a injection for non-primitive variable
     <property name="lap" ref="lap1"></property> -->
@@ -25,8 +25,8 @@
     <!-- <bean id="dev2" class="com.vinay.Dev">
     </bean>  -->
 
-    <bean id="com" class="com.vinay.Laptop">
+    <bean id="com" class="com.vinay.Laptop" primary="true">
     </bean>
-    <bean id="desk1" class="com.vinay.Desktop">
+    <bean id="com1" class="com.vinay.Desktop">
     </bean>
 </beans>
