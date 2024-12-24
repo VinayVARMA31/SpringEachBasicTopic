@@ -1,6 +1,6 @@
 package com.vinay;
 
-public class Laptop {
+public class Laptop implements Computer {
 
     Laptop(){
         System.out.println("Laptop Constructor.");
